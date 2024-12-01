@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Club de Sport</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulaire Club de Sport</h1>
+        <form id="clubForm">
+            <label for="clubName">Nom du Club :</label>
+            <input type="text" id="clubName" placeholder="Entrez le nom du club" required>
+
+            <label for="coachName">Nom de l'Entraîneur :</label>
+            <input type="text" id="coachName" placeholder="Entrez le nom de l'entraîneur" required>
+
+            <div id="playerSection">
+                <label>Joueurs :</label>
+                <div class="player">
+                    <input type="text" name="playerName" placeholder="Nom du joueur" required>
+                </div>
+            </div>
+            <button type="button" id="addPlayer">Ajouter un joueur</button>
+
+            <label for="exercise">Exercice effectué :</label>
+            <textarea id="exercise" rows="4" placeholder="Description de l'exercice" required></textarea>
+
+            <button type="button" id="exportExcel">Exporter en Excel</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
